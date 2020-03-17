@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!--导入thymeleaf名空间， 用于提示 -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>success</h1>
+    <div th:text="${hello}" th:if="${not #strings.isEmpty(msg)}"></div>
+
+    <div th:utext="${hello}"></div>
+</body>
+</html>
